@@ -1,0 +1,394 @@
+openapi: 3.0.3
+info:
+  title: FDV-systemet – API for bygg og rom
+  version: 1.0.0
+  description: |
+    API-et gir lesetilgang til registeret over bygg og rom i FDV-systemet
+    (forvaltning, drift og vedlikehold) hos Tindvik Eiendom AS.
+
+    **Autentisering:** Alle kall må ha headeren `X-API-Key`. API-et er laget for
+    kall fra server til server. Nøkkelen skal aldri eksponeres i nettleseren eller
+    ligge i kildekoden.
+
+    **Format:** Alle svar er JSON (UTF-8). Alle tidspunkt er i UTC på ISO 8601-format,
+    for eksempel `2026-08-14T07:12:00Z`.
+
+    **Paginering:** Lister returneres side for side og er sortert på `id`. Bruk
+    `side` og `antall`. Objektet `paginering` i svaret viser totalt antall
+    elementer og inneholder lenker til forrige og neste side.
+
+    **Endringer:** Med `endretEtter` får du bare bygg eller rom der `sistEndret` er
+    senere enn tidspunktet. Bygg og rom som ikke lenger er i bruk, slettes ikke,
+    men får `aktiv: false`.
+
+    **Feil:** Feil returneres med riktig HTTP-statuskode og et `feil`-objekt. Ved
+    `503` oppgir headeren `Retry-After` hvor mange sekunder klienten bør vente før
+    et nytt forsøk.
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Lokalt testmiljø (fdv-mock.js)
+security:
+  - apiNokkel: []
+tags:
+  - name: Bygg
+    description: Bygg som Tindvik Eiendom AS eier eller forvalter
+  - name: Rom
+    description: Rom og områder i byggene
+paths:
+  /bygg:
+    get:
+      tags: [Bygg]
+      summary: Liste over bygg
+      operationId: hentBygg
+      parameters:
+        - $ref: '#/components/parameters/Side'
+        - $ref: '#/components/parameters/Antall'
+        - $ref: '#/components/parameters/EndretEtter'
+      responses:
+        '200':
+          description: En side med bygg.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByggListe'
+        '400':
+          $ref: '#/components/responses/UgyldigForesporsel'
+        '401':
+          $ref: '#/components/responses/IkkeAutentisert'
+        '503':
+          $ref: '#/components/responses/MidlertidigUtilgjengelig'
+  /bygg/{byggId}:
+    get:
+      tags: [Bygg]
+      summary: Ett bygg
+      operationId: hentEttBygg
+      parameters:
+        - $ref: '#/components/parameters/ByggId'
+      responses:
+        '200':
+          description: Bygget.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bygg'
+        '401':
+          $ref: '#/components/responses/IkkeAutentisert'
+        '404':
+          $ref: '#/components/responses/IkkeFunnet'
+        '503':
+          $ref: '#/components/responses/MidlertidigUtilgjengelig'
+  /bygg/{byggId}/rom:
+    get:
+      tags: [Bygg, Rom]
+      summary: Rommene i ett bygg
+      operationId: hentRomIBygg
+      parameters:
+        - $ref: '#/components/parameters/ByggId'
+        - $ref: '#/components/parameters/Side'
+        - $ref: '#/components/parameters/Antall'
+      responses:
+        '200':
+          description: En side med rom i bygget. Listen kan være tom.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RomListe'
+        '400':
+          $ref: '#/components/responses/UgyldigForesporsel'
+        '401':
+          $ref: '#/components/responses/IkkeAutentisert'
+        '404':
+          $ref: '#/components/responses/IkkeFunnet'
+        '503':
+          $ref: '#/components/responses/MidlertidigUtilgjengelig'
+  /rom:
+    get:
+      tags: [Rom]
+      summary: Liste over alle rom
+      operationId: hentRom
+      parameters:
+        - $ref: '#/components/parameters/Side'
+        - $ref: '#/components/parameters/Antall'
+        - $ref: '#/components/parameters/EndretEtter'
+        - name: byggId
+          in: query
+          required: false
+          description: Viser bare rom i dette bygget.
+          schema:
+            type: string
+            example: B-1001
+      responses:
+        '200':
+          description: En side med rom.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RomListe'
+        '400':
+          $ref: '#/components/responses/UgyldigForesporsel'
+        '401':
+          $ref: '#/components/responses/IkkeAutentisert'
+        '503':
+          $ref: '#/components/responses/MidlertidigUtilgjengelig'
+  /rom/{romId}:
+    get:
+      tags: [Rom]
+      summary: Ett rom
+      operationId: hentEttRom
+      parameters:
+        - name: romId
+          in: path
+          required: true
+          description: Rommets ID i FDV-systemet.
+          schema:
+            type: string
+            example: R-1001-002
+      responses:
+        '200':
+          description: Rommet.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rom'
+        '401':
+          $ref: '#/components/responses/IkkeAutentisert'
+        '404':
+          $ref: '#/components/responses/IkkeFunnet'
+        '503':
+          $ref: '#/components/responses/MidlertidigUtilgjengelig'
+components:
+  securitySchemes:
+    apiNokkel:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: Nøkkel til testmiljøet er `tindvik-test-2026`.
+  parameters:
+    ByggId:
+      name: byggId
+      in: path
+      required: true
+      description: Byggets ID i FDV-systemet.
+      schema:
+        type: string
+        example: B-1001
+    Side:
+      name: side
+      in: query
+      required: false
+      description: Sidenummer. Første side er 1.
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+    Antall:
+      name: antall
+      in: query
+      required: false
+      description: Antall elementer per side.
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 20
+    EndretEtter:
+      name: endretEtter
+      in: query
+      required: false
+      description: |
+        Viser bare elementer der `sistEndret` er senere enn dette tidspunktet
+        (ISO 8601). Tidspunkt uten tidssone tolkes som UTC. Husk URL-koding,
+        for eksempel `+` som `%2B`.
+      schema:
+        type: string
+        format: date-time
+        example: '2026-09-01T00:00:00Z'
+  headers:
+    RetryAfter:
+      description: Antall sekunder klienten bør vente før et nytt forsøk.
+      schema:
+        type: integer
+        example: 5
+  responses:
+    UgyldigForesporsel:
+      description: Ugyldig forespørsel, for eksempel ugyldige parametre.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Feil'
+          example:
+            feil:
+              kode: UGYLDIG_FORESPORSEL
+              melding: Parameteren antall må være et heltall fra 1 til 100.
+    IkkeAutentisert:
+      description: Manglende eller ugyldig API-nøkkel.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Feil'
+          example:
+            feil:
+              kode: UGYLDIG_NOKKEL
+              melding: Ugyldig API-nøkkel.
+    IkkeFunnet:
+      description: Bygget eller rommet finnes ikke.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Feil'
+          example:
+            feil:
+              kode: IKKE_FUNNET
+              melding: Fant ikke bygg med id «B-9999».
+    MidlertidigUtilgjengelig:
+      description: FDV-systemet er midlertidig utilgjengelig, for eksempel på grunn av vedlikehold.
+      headers:
+        Retry-After:
+          $ref: '#/components/headers/RetryAfter'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Feil'
+          example:
+            feil:
+              kode: MIDLERTIDIG_UTILGJENGELIG
+              melding: FDV-systemet er midlertidig utilgjengelig. Prøv igjen senere.
+  schemas:
+    Adresse:
+      type: object
+      required: [gateadresse, postnummer, poststed]
+      properties:
+        gateadresse:
+          type: string
+          example: Havnegata 12
+        postnummer:
+          type: string
+          example: '4890'
+        poststed:
+          type: string
+          example: Tindvik
+    Bygg:
+      type: object
+      required: [id, navn, type, adresse, aktiv, sistEndret]
+      properties:
+        id:
+          type: string
+          example: B-1001
+        navn:
+          type: string
+          example: Tindvik Kontorsenter
+        type:
+          type: string
+          description: Byggtype. Nye typer kan bli lagt til, så klienter bør tåle ukjente verdier.
+          enum: [kontor, handel, bolig, parkering]
+          example: kontor
+        adresse:
+          $ref: '#/components/schemas/Adresse'
+        byggeaar:
+          type: integer
+          example: 1998
+        aktiv:
+          type: boolean
+          description: '`false` betyr at bygget ikke lenger er i bruk (for eksempel solgt).'
+          example: true
+        sistEndret:
+          type: string
+          format: date-time
+          example: '2025-12-11T10:44:00Z'
+    Rom:
+      type: object
+      required: [id, byggId, navn, romnummer, etasje, type, aktiv, sistEndret]
+      properties:
+        id:
+          type: string
+          example: R-1001-002
+        byggId:
+          type: string
+          example: B-1001
+        navn:
+          type: string
+          example: Resepsjon
+        romnummer:
+          type: string
+          nullable: true
+          description: Mangler for blant annet trapperom, heiser og uteområder.
+          example: '1.01'
+        etasje:
+          type: integer
+          nullable: true
+          description: Negative tall er etasjer under bakken. Mangler for rom som går over flere etasjer og for uteområder.
+          example: 1
+        type:
+          type: string
+          description: Romtype. Nye typer kan bli lagt til, så klienter bør tåle ukjente verdier.
+          enum: [fellesareal, utleieenhet, toalett, teknisk, lager, avfall, parkering, trapperom, vaskeri, uteomrade, garderobe, moterom, kontor]
+          example: fellesareal
+        aktiv:
+          type: boolean
+          description: '`false` betyr at rommet ikke lenger er i bruk.'
+          example: true
+        sistEndret:
+          type: string
+          format: date-time
+          example: '2024-02-26T09:02:00Z'
+    Paginering:
+      type: object
+      required: [side, antallPerSide, totaltAntall, antallSider, forrige, neste]
+      properties:
+        side:
+          type: integer
+          example: 1
+        antallPerSide:
+          type: integer
+          example: 20
+        totaltAntall:
+          type: integer
+          example: 146
+        antallSider:
+          type: integer
+          example: 8
+        forrige:
+          type: string
+          nullable: true
+          description: Relativ lenke til forrige side, eller `null` på første side.
+          example: null
+        neste:
+          type: string
+          nullable: true
+          description: Relativ lenke til neste side, eller `null` på siste side.
+          example: /api/v1/rom?side=2&antall=20
+    ByggListe:
+      type: object
+      required: [data, paginering]
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Bygg'
+        paginering:
+          $ref: '#/components/schemas/Paginering'
+    RomListe:
+      type: object
+      required: [data, paginering]
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Rom'
+        paginering:
+          $ref: '#/components/schemas/Paginering'
+    Feil:
+      type: object
+      required: [feil]
+      properties:
+        feil:
+          type: object
+          required: [kode, melding]
+          properties:
+            kode:
+              type: string
+              enum: [UGYLDIG_FORESPORSEL, MANGLER_NOKKEL, UGYLDIG_NOKKEL, IKKE_FUNNET, METODE_IKKE_TILLATT, MIDLERTIDIG_UTILGJENGELIG, INTERN_FEIL]
+              example: UGYLDIG_NOKKEL
+            melding:
+              type: string
+              example: Ugyldig API-nøkkel.

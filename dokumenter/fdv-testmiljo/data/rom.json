@@ -1,0 +1,1462 @@
+[
+  {
+    "id": "R-1001-001",
+    "byggId": "B-1001",
+    "navn": "Hovedinngang",
+    "romnummer": "1.00",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-03-25T06:13:00Z"
+  },
+  {
+    "id": "R-1001-002",
+    "byggId": "B-1001",
+    "navn": "Resepsjon",
+    "romnummer": "1.01",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-03-23T13:22:00Z"
+  },
+  {
+    "id": "R-1001-003",
+    "byggId": "B-1001",
+    "navn": "Kantine «Tinden»",
+    "romnummer": "1.10",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-09-10T08:42:00Z"
+  },
+  {
+    "id": "R-1001-004",
+    "byggId": "B-1001",
+    "navn": "Toaletter 1. etasje",
+    "romnummer": "1.15",
+    "etasje": 1,
+    "type": "toalett",
+    "aktiv": true,
+    "sistEndret": "2025-10-06T09:45:00Z"
+  },
+  {
+    "id": "R-1001-005",
+    "byggId": "B-1001",
+    "navn": "Møterom Fjorden",
+    "romnummer": "2.04",
+    "etasje": 2,
+    "type": "moterom",
+    "aktiv": true,
+    "sistEndret": "2024-12-16T06:29:00Z"
+  },
+  {
+    "id": "R-1001-006",
+    "byggId": "B-1001",
+    "navn": "Utleieenhet 2A",
+    "romnummer": "2.10",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2024-02-06T10:42:00Z"
+  },
+  {
+    "id": "R-1001-007",
+    "byggId": "B-1001",
+    "navn": "Utleieenhet 3A",
+    "romnummer": "3.10",
+    "etasje": 3,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-12-12T12:41:00Z"
+  },
+  {
+    "id": "R-1001-008",
+    "byggId": "B-1001",
+    "navn": "Utleieenhet 4A",
+    "romnummer": "4.10",
+    "etasje": 4,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-08-19T07:03:00Z"
+  },
+  {
+    "id": "R-1001-009",
+    "byggId": "B-1001",
+    "navn": "Heis",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-07-18T10:35:00Z"
+  },
+  {
+    "id": "R-1001-010",
+    "byggId": "B-1001",
+    "navn": "Parkeringskjeller",
+    "romnummer": "U1",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2024-02-02T09:30:00Z"
+  },
+  {
+    "id": "R-1001-011",
+    "byggId": "B-1001",
+    "navn": "Teknisk rom – ventilasjon",
+    "romnummer": "5.01",
+    "etasje": 5,
+    "type": "teknisk",
+    "aktiv": true,
+    "sistEndret": "2025-10-13T10:21:00Z"
+  },
+  {
+    "id": "R-1002-001",
+    "byggId": "B-1002",
+    "navn": "Inngang",
+    "romnummer": "101",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-07-09T09:52:00Z"
+  },
+  {
+    "id": "R-1002-002",
+    "byggId": "B-1002",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2024-09-10T08:50:00Z"
+  },
+  {
+    "id": "R-1002-003",
+    "byggId": "B-1002",
+    "navn": "Toalett 1. etasje",
+    "romnummer": "104",
+    "etasje": 1,
+    "type": "toalett",
+    "aktiv": true,
+    "sistEndret": "2026-01-22T11:16:00Z"
+  },
+  {
+    "id": "R-1002-004",
+    "byggId": "B-1002",
+    "navn": "Butikklokale 1. etasje",
+    "romnummer": "110",
+    "etasje": 1,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-03-18T06:49:00Z"
+  },
+  {
+    "id": "R-1002-005",
+    "byggId": "B-1002",
+    "navn": "Utleieenhet 2. etasje",
+    "romnummer": "201",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2024-01-17T11:32:00Z"
+  },
+  {
+    "id": "R-1002-006",
+    "byggId": "B-1002",
+    "navn": "Utleieenhet 3. etasje",
+    "romnummer": "301",
+    "etasje": 3,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-09-04T06:14:00Z"
+  },
+  {
+    "id": "R-1002-007",
+    "byggId": "B-1002",
+    "navn": "Loft – lager",
+    "romnummer": "401",
+    "etasje": 4,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2026-03-20T09:56:00Z"
+  },
+  {
+    "id": "R-1002-008",
+    "byggId": "B-1002",
+    "navn": "Kaiområde",
+    "romnummer": null,
+    "etasje": null,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2024-01-08T13:57:00Z"
+  },
+  {
+    "id": "R-1003-001",
+    "byggId": "B-1003",
+    "navn": "Hovedinngang",
+    "romnummer": "A101",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-01-24T07:23:00Z"
+  },
+  {
+    "id": "R-1003-002",
+    "byggId": "B-1003",
+    "navn": "Resepsjon",
+    "romnummer": "A102",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-12-04T08:39:00Z"
+  },
+  {
+    "id": "R-1003-003",
+    "byggId": "B-1003",
+    "navn": "Treningsrom",
+    "romnummer": "U105",
+    "etasje": -1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-04-09T07:41:00Z"
+  },
+  {
+    "id": "R-1003-004",
+    "byggId": "B-1003",
+    "navn": "Garderobe herrer",
+    "romnummer": "U106",
+    "etasje": -1,
+    "type": "garderobe",
+    "aktiv": true,
+    "sistEndret": "2025-06-17T11:23:00Z"
+  },
+  {
+    "id": "R-1003-005",
+    "byggId": "B-1003",
+    "navn": "Garderobe damer",
+    "romnummer": "U107",
+    "etasje": -1,
+    "type": "garderobe",
+    "aktiv": true,
+    "sistEndret": "2025-12-01T07:05:00Z"
+  },
+  {
+    "id": "R-1003-006",
+    "byggId": "B-1003",
+    "navn": "Sykkelparkering",
+    "romnummer": "U110",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-07-07T09:52:00Z"
+  },
+  {
+    "id": "R-1003-007",
+    "byggId": "B-1003",
+    "navn": "Møterom Tindesalen",
+    "romnummer": "A201",
+    "etasje": 2,
+    "type": "moterom",
+    "aktiv": true,
+    "sistEndret": "2026-03-10T06:17:00Z"
+  },
+  {
+    "id": "R-1003-008",
+    "byggId": "B-1003",
+    "navn": "Utleieenhet 3. etasje",
+    "romnummer": "A301",
+    "etasje": 3,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2026-04-01T08:41:00Z"
+  },
+  {
+    "id": "R-1003-009",
+    "byggId": "B-1003",
+    "navn": "Utleieenhet 4. etasje",
+    "romnummer": "A401",
+    "etasje": 4,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2024-04-17T13:02:00Z"
+  },
+  {
+    "id": "R-1003-010",
+    "byggId": "B-1003",
+    "navn": "Takterrasse",
+    "romnummer": "A601",
+    "etasje": 6,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2025-08-05T08:50:00Z"
+  },
+  {
+    "id": "R-1004-001",
+    "byggId": "B-1004",
+    "navn": "Inngang",
+    "romnummer": "A1.01",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-04-16T08:36:00Z"
+  },
+  {
+    "id": "R-1004-002",
+    "byggId": "B-1004",
+    "navn": "Kafé",
+    "romnummer": "A1.05",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-12-16T07:44:00Z"
+  },
+  {
+    "id": "R-1004-003",
+    "byggId": "B-1004",
+    "navn": "Toaletter",
+    "romnummer": "A1.07",
+    "etasje": 1,
+    "type": "toalett",
+    "aktiv": true,
+    "sistEndret": "2024-07-15T11:22:00Z"
+  },
+  {
+    "id": "R-1004-004",
+    "byggId": "B-1004",
+    "navn": "Varemottak",
+    "romnummer": "A1.20",
+    "etasje": 1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2025-10-21T10:16:00Z"
+  },
+  {
+    "id": "R-1004-005",
+    "byggId": "B-1004",
+    "navn": "Gammelt kopirom (ombygd)",
+    "romnummer": "A2.03",
+    "etasje": 2,
+    "type": "fellesareal",
+    "aktiv": false,
+    "sistEndret": "2025-12-18T09:48:00Z"
+  },
+  {
+    "id": "R-1004-006",
+    "byggId": "B-1004",
+    "navn": "Laboratorium",
+    "romnummer": "A2.10",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2024-01-09T09:35:00Z"
+  },
+  {
+    "id": "R-1004-007",
+    "byggId": "B-1004",
+    "navn": "Utleieenhet 3. etasje",
+    "romnummer": "A3.01",
+    "etasje": 3,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-03-28T10:01:00Z"
+  },
+  {
+    "id": "R-1004-008",
+    "byggId": "B-1004",
+    "navn": "Serverrom",
+    "romnummer": "AU.02",
+    "etasje": -1,
+    "type": "teknisk",
+    "aktiv": true,
+    "sistEndret": "2025-02-18T06:14:00Z"
+  },
+  {
+    "id": "R-1005-001",
+    "byggId": "B-1005",
+    "navn": "Inngang",
+    "romnummer": "B1.01",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-02-18T07:31:00Z"
+  },
+  {
+    "id": "R-1005-002",
+    "byggId": "B-1005",
+    "navn": "Auditorium",
+    "romnummer": "B1.10",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-03-25T11:51:00Z"
+  },
+  {
+    "id": "R-1005-003",
+    "byggId": "B-1005",
+    "navn": "Toaletter",
+    "romnummer": "B1.12",
+    "etasje": 1,
+    "type": "toalett",
+    "aktiv": true,
+    "sistEndret": "2024-03-12T10:18:00Z"
+  },
+  {
+    "id": "R-1005-004",
+    "byggId": "B-1005",
+    "navn": "Coworking-område",
+    "romnummer": "B2.01",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2026-06-17T06:09:00Z"
+  },
+  {
+    "id": "R-1005-005",
+    "byggId": "B-1005",
+    "navn": "Møterom Nordlys",
+    "romnummer": "B2.05",
+    "etasje": 2,
+    "type": "moterom",
+    "aktiv": true,
+    "sistEndret": "2025-05-14T12:36:00Z"
+  },
+  {
+    "id": "R-1005-006",
+    "byggId": "B-1005",
+    "navn": "Utleieenhet 3. etasje",
+    "romnummer": "B3.01",
+    "etasje": 3,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-12-25T12:50:00Z"
+  },
+  {
+    "id": "R-1005-007",
+    "byggId": "B-1005",
+    "navn": "Utleieenhet 4. etasje",
+    "romnummer": "B4.01",
+    "etasje": 4,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-08-08T12:07:00Z"
+  },
+  {
+    "id": "R-1005-008",
+    "byggId": "B-1005",
+    "navn": "Sykkelbod – bakgård",
+    "romnummer": null,
+    "etasje": null,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2026-09-17T11:05:00Z"
+  },
+  {
+    "id": "R-1006-001",
+    "byggId": "B-1006",
+    "navn": "Inngang",
+    "romnummer": "101",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": false,
+    "sistEndret": "2026-06-30T10:00:00Z"
+  },
+  {
+    "id": "R-1006-002",
+    "byggId": "B-1006",
+    "navn": "Ekspedisjonshall",
+    "romnummer": "102",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": false,
+    "sistEndret": "2026-06-30T10:00:00Z"
+  },
+  {
+    "id": "R-1006-003",
+    "byggId": "B-1006",
+    "navn": "Kontorer 2. etasje",
+    "romnummer": "201",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": false,
+    "sistEndret": "2026-06-30T10:00:00Z"
+  },
+  {
+    "id": "R-1006-004",
+    "byggId": "B-1006",
+    "navn": "Kjeller",
+    "romnummer": "K01",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": false,
+    "sistEndret": "2026-06-30T10:00:00Z"
+  },
+  {
+    "id": "R-2001-001",
+    "byggId": "B-2001",
+    "navn": "Hovedinngang nord",
+    "romnummer": "N1",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-11-15T07:17:00Z"
+  },
+  {
+    "id": "R-2001-002",
+    "byggId": "B-2001",
+    "navn": "Inngang sør",
+    "romnummer": "S1",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-06-22T12:37:00Z"
+  },
+  {
+    "id": "R-2001-003",
+    "byggId": "B-2001",
+    "navn": "Torget",
+    "romnummer": "T1",
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-11-07T09:03:00Z"
+  },
+  {
+    "id": "R-2001-004",
+    "byggId": "B-2001",
+    "navn": "Rulletrapp nord",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-05-07T11:56:00Z"
+  },
+  {
+    "id": "R-2001-005",
+    "byggId": "B-2001",
+    "navn": "Rulletrapp sør",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-09-03T10:01:00Z"
+  },
+  {
+    "id": "R-2001-006",
+    "byggId": "B-2001",
+    "navn": "Heis ved Torget",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-07-31T06:29:00Z"
+  },
+  {
+    "id": "R-2001-007",
+    "byggId": "B-2001",
+    "navn": "Toaletter 1. etasje",
+    "romnummer": "WC1",
+    "etasje": 1,
+    "type": "toalett",
+    "aktiv": true,
+    "sistEndret": "2024-06-10T13:39:00Z"
+  },
+  {
+    "id": "R-2001-008",
+    "byggId": "B-2001",
+    "navn": "Toaletter 2. etasje",
+    "romnummer": "WC2",
+    "etasje": 2,
+    "type": "toalett",
+    "aktiv": true,
+    "sistEndret": "2025-01-10T11:13:00Z"
+  },
+  {
+    "id": "R-2001-009",
+    "byggId": "B-2001",
+    "navn": "Stellerom",
+    "romnummer": "WC3",
+    "etasje": 1,
+    "type": "toalett",
+    "aktiv": true,
+    "sistEndret": "2024-07-12T10:59:00Z"
+  },
+  {
+    "id": "R-2001-010",
+    "byggId": "B-2001",
+    "navn": "Spiseri «Mathallen»",
+    "romnummer": "M1",
+    "etasje": 2,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-09-18T09:30:00Z"
+  },
+  {
+    "id": "R-2001-011",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 101",
+    "romnummer": "101",
+    "etasje": 1,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-09-12T06:35:00Z"
+  },
+  {
+    "id": "R-2001-012",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 102",
+    "romnummer": "102",
+    "etasje": 1,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-05-12T07:28:00Z"
+  },
+  {
+    "id": "R-2001-013",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 103",
+    "romnummer": "103",
+    "etasje": 1,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-05-12T09:51:00Z"
+  },
+  {
+    "id": "R-2001-014",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 104",
+    "romnummer": "104",
+    "etasje": 1,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-03-10T11:21:00Z"
+  },
+  {
+    "id": "R-2001-015",
+    "byggId": "B-2001",
+    "navn": "Gammel kiosk",
+    "romnummer": "105",
+    "etasje": 1,
+    "type": "utleieenhet",
+    "aktiv": false,
+    "sistEndret": "2026-09-12T14:03:00Z"
+  },
+  {
+    "id": "R-2001-016",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 201",
+    "romnummer": "201",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2024-04-26T13:09:00Z"
+  },
+  {
+    "id": "R-2001-017",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 202",
+    "romnummer": "202",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2025-11-24T07:38:00Z"
+  },
+  {
+    "id": "R-2001-018",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 203",
+    "romnummer": "203",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2024-06-13T12:43:00Z"
+  },
+  {
+    "id": "R-2001-019",
+    "byggId": "B-2001",
+    "navn": "Butikklokale 204",
+    "romnummer": "204",
+    "etasje": 2,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2024-07-26T12:49:00Z"
+  },
+  {
+    "id": "R-2001-020",
+    "byggId": "B-2001",
+    "navn": "Barnas lekeområde",
+    "romnummer": "L1",
+    "etasje": 2,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-05-14T13:41:00Z"
+  },
+  {
+    "id": "R-2001-021",
+    "byggId": "B-2001",
+    "navn": "Senterkontor",
+    "romnummer": "K1",
+    "etasje": 2,
+    "type": "kontor",
+    "aktiv": true,
+    "sistEndret": "2025-08-20T11:48:00Z"
+  },
+  {
+    "id": "R-2001-022",
+    "byggId": "B-2001",
+    "navn": "Teknisk rom – ventilasjon",
+    "romnummer": "TR1",
+    "etasje": 3,
+    "type": "teknisk",
+    "aktiv": true,
+    "sistEndret": "2026-07-22T08:10:00Z"
+  },
+  {
+    "id": "R-2001-023",
+    "byggId": "B-2001",
+    "navn": "Varemottak",
+    "romnummer": "V1",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2024-03-18T10:24:00Z"
+  },
+  {
+    "id": "R-2001-024",
+    "byggId": "B-2001",
+    "navn": "Avfallsrom",
+    "romnummer": "V2",
+    "etasje": -1,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2024-10-10T08:14:00Z"
+  },
+  {
+    "id": "R-2001-025",
+    "byggId": "B-2001",
+    "navn": "Parkeringshus P1",
+    "romnummer": "P1",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-11-20T12:42:00Z"
+  },
+  {
+    "id": "R-2001-026",
+    "byggId": "B-2001",
+    "navn": "Parkeringshus P2",
+    "romnummer": "P2",
+    "etasje": -2,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-12-22T13:06:00Z"
+  },
+  {
+    "id": "R-2001-027",
+    "byggId": "B-2001",
+    "navn": "Uteområde og innkjøring",
+    "romnummer": null,
+    "etasje": null,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2026-03-10T12:27:00Z"
+  },
+  {
+    "id": "R-3001-001",
+    "byggId": "B-3001",
+    "navn": "Inngangsparti",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-07-22T08:43:00Z"
+  },
+  {
+    "id": "R-3001-002",
+    "byggId": "B-3001",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2026-04-16T09:46:00Z"
+  },
+  {
+    "id": "R-3001-003",
+    "byggId": "B-3001",
+    "navn": "Heis",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-12-11T08:55:00Z"
+  },
+  {
+    "id": "R-3001-004",
+    "byggId": "B-3001",
+    "navn": "Vaskeri",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": true,
+    "sistEndret": "2026-03-25T07:25:00Z"
+  },
+  {
+    "id": "R-3001-005",
+    "byggId": "B-3001",
+    "navn": "Sykkelbod",
+    "romnummer": "K2",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2026-04-29T07:32:00Z"
+  },
+  {
+    "id": "R-3001-006",
+    "byggId": "B-3001",
+    "navn": "Kjellerboder",
+    "romnummer": "K3",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2024-05-16T08:17:00Z"
+  },
+  {
+    "id": "R-3001-007",
+    "byggId": "B-3001",
+    "navn": "Avfallsrom",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2026-03-04T12:50:00Z"
+  },
+  {
+    "id": "R-3001-008",
+    "byggId": "B-3001",
+    "navn": "Lekeplass (felles for Solsiden)",
+    "romnummer": null,
+    "etasje": null,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2025-12-19T06:05:00Z"
+  },
+  {
+    "id": "R-3002-001",
+    "byggId": "B-3002",
+    "navn": "Inngangsparti",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-04-25T06:30:00Z"
+  },
+  {
+    "id": "R-3002-002",
+    "byggId": "B-3002",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2025-05-12T07:33:00Z"
+  },
+  {
+    "id": "R-3002-003",
+    "byggId": "B-3002",
+    "navn": "Heis",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-10-10T11:14:00Z"
+  },
+  {
+    "id": "R-3002-004",
+    "byggId": "B-3002",
+    "navn": "Vaskeri",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": true,
+    "sistEndret": "2025-07-04T08:51:00Z"
+  },
+  {
+    "id": "R-3002-005",
+    "byggId": "B-3002",
+    "navn": "Gammelt tørkerom – stengt",
+    "romnummer": "K2",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": false,
+    "sistEndret": "2026-09-19T07:55:00Z"
+  },
+  {
+    "id": "R-3002-006",
+    "byggId": "B-3002",
+    "navn": "Kjellerboder",
+    "romnummer": "K3",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2026-01-27T06:11:00Z"
+  },
+  {
+    "id": "R-3002-007",
+    "byggId": "B-3002",
+    "navn": "Avfallsrom",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2026-05-18T12:42:00Z"
+  },
+  {
+    "id": "R-3002-008",
+    "byggId": "B-3002",
+    "navn": "Sykkelbod",
+    "romnummer": "K4",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-07-03T11:30:00Z"
+  },
+  {
+    "id": "R-3003-001",
+    "byggId": "B-3003",
+    "navn": "Inngangsparti",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-04-09T12:59:00Z"
+  },
+  {
+    "id": "R-3003-002",
+    "byggId": "B-3003",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2025-09-10T06:07:00Z"
+  },
+  {
+    "id": "R-3003-003",
+    "byggId": "B-3003",
+    "navn": "Heis",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-08-23T07:03:00Z"
+  },
+  {
+    "id": "R-3003-004",
+    "byggId": "B-3003",
+    "navn": "Vaskeri",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": true,
+    "sistEndret": "2025-01-23T10:45:00Z"
+  },
+  {
+    "id": "R-3003-005",
+    "byggId": "B-3003",
+    "navn": "Sykkelbod",
+    "romnummer": "K2",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-08-05T10:39:00Z"
+  },
+  {
+    "id": "R-3003-006",
+    "byggId": "B-3003",
+    "navn": "Kjellerboder",
+    "romnummer": "K3",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2026-02-20T10:54:00Z"
+  },
+  {
+    "id": "R-3003-007",
+    "byggId": "B-3003",
+    "navn": "Avfallsrom",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2025-08-25T06:49:00Z"
+  },
+  {
+    "id": "R-3004-001",
+    "byggId": "B-3004",
+    "navn": "Inngang",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-06-09T08:45:00Z"
+  },
+  {
+    "id": "R-3004-002",
+    "byggId": "B-3004",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2024-03-19T09:17:00Z"
+  },
+  {
+    "id": "R-3004-003",
+    "byggId": "B-3004",
+    "navn": "Vaskeri",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": true,
+    "sistEndret": "2025-11-17T12:49:00Z"
+  },
+  {
+    "id": "R-3004-004",
+    "byggId": "B-3004",
+    "navn": "Kjellerboder",
+    "romnummer": "K2",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2025-07-21T08:00:00Z"
+  },
+  {
+    "id": "R-3004-005",
+    "byggId": "B-3004",
+    "navn": "Avfallsbu",
+    "romnummer": null,
+    "etasje": null,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2025-05-13T07:15:00Z"
+  },
+  {
+    "id": "R-3004-006",
+    "byggId": "B-3004",
+    "navn": "Parkeringsplass",
+    "romnummer": null,
+    "etasje": null,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2024-10-02T10:29:00Z"
+  },
+  {
+    "id": "R-3005-001",
+    "byggId": "B-3005",
+    "navn": "Inngang",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-05-09T09:58:00Z"
+  },
+  {
+    "id": "R-3005-002",
+    "byggId": "B-3005",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2026-01-06T10:29:00Z"
+  },
+  {
+    "id": "R-3005-003",
+    "byggId": "B-3005",
+    "navn": "Vaskeri",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": true,
+    "sistEndret": "2024-09-13T12:09:00Z"
+  },
+  {
+    "id": "R-3005-004",
+    "byggId": "B-3005",
+    "navn": "Kjellerboder",
+    "romnummer": "K2",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2025-04-30T10:42:00Z"
+  },
+  {
+    "id": "R-3005-005",
+    "byggId": "B-3005",
+    "navn": "Avfallsbu",
+    "romnummer": null,
+    "etasje": null,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2025-01-30T12:25:00Z"
+  },
+  {
+    "id": "R-3005-006",
+    "byggId": "B-3005",
+    "navn": "Parkeringsplass",
+    "romnummer": null,
+    "etasje": null,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2026-05-12T06:31:00Z"
+  },
+  {
+    "id": "R-3006-001",
+    "byggId": "B-3006",
+    "navn": "Inngang",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-04-17T11:44:00Z"
+  },
+  {
+    "id": "R-3006-002",
+    "byggId": "B-3006",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2025-05-29T10:58:00Z"
+  },
+  {
+    "id": "R-3006-003",
+    "byggId": "B-3006",
+    "navn": "Kjellerbod",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2025-11-07T09:56:00Z"
+  },
+  {
+    "id": "R-3006-004",
+    "byggId": "B-3006",
+    "navn": "Hage",
+    "romnummer": null,
+    "etasje": null,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2025-08-29T06:35:00Z"
+  },
+  {
+    "id": "R-3006-005",
+    "byggId": "B-3006",
+    "navn": "Avfallsbu",
+    "romnummer": null,
+    "etasje": null,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2025-09-02T13:46:00Z"
+  },
+  {
+    "id": "R-3007-001",
+    "byggId": "B-3007",
+    "navn": "Inngang",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2026-02-03T07:26:00Z"
+  },
+  {
+    "id": "R-3007-002",
+    "byggId": "B-3007",
+    "navn": "Heis A",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-09-26T10:01:00Z"
+  },
+  {
+    "id": "R-3007-003",
+    "byggId": "B-3007",
+    "navn": "Heis B",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-09-23T13:53:00Z"
+  },
+  {
+    "id": "R-3007-004",
+    "byggId": "B-3007",
+    "navn": "Trapperom A",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2026-02-24T10:27:00Z"
+  },
+  {
+    "id": "R-3007-005",
+    "byggId": "B-3007",
+    "navn": "Trapperom B",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2024-11-27T11:14:00Z"
+  },
+  {
+    "id": "R-3007-006",
+    "byggId": "B-3007",
+    "navn": "Garasjeanlegg",
+    "romnummer": "G1",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2024-12-04T12:34:00Z"
+  },
+  {
+    "id": "R-3007-007",
+    "byggId": "B-3007",
+    "navn": "Vaskeri",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": true,
+    "sistEndret": "2024-05-22T06:13:00Z"
+  },
+  {
+    "id": "R-3007-008",
+    "byggId": "B-3007",
+    "navn": "Takterrasse",
+    "romnummer": null,
+    "etasje": 8,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2025-08-08T11:20:00Z"
+  },
+  {
+    "id": "R-3007-009",
+    "byggId": "B-3007",
+    "navn": "Avfallsrom",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "avfall",
+    "aktiv": true,
+    "sistEndret": "2024-02-23T10:35:00Z"
+  },
+  {
+    "id": "R-3008-001",
+    "byggId": "B-3008",
+    "navn": "Inngang",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-11-06T13:38:00Z"
+  },
+  {
+    "id": "R-3008-002",
+    "byggId": "B-3008",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2026-04-22T08:42:00Z"
+  },
+  {
+    "id": "R-3008-003",
+    "byggId": "B-3008",
+    "navn": "Heis",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-06-23T10:39:00Z"
+  },
+  {
+    "id": "R-3008-004",
+    "byggId": "B-3008",
+    "navn": "Bakgård",
+    "romnummer": null,
+    "etasje": null,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2025-07-08T10:36:00Z"
+  },
+  {
+    "id": "R-3008-005",
+    "byggId": "B-3008",
+    "navn": "Sykkelbod",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-01-20T13:00:00Z"
+  },
+  {
+    "id": "R-3008-006",
+    "byggId": "B-3008",
+    "navn": "Vaskeri",
+    "romnummer": "K2",
+    "etasje": -1,
+    "type": "vaskeri",
+    "aktiv": true,
+    "sistEndret": "2024-07-04T08:30:00Z"
+  },
+  {
+    "id": "R-3009-001",
+    "byggId": "B-3009",
+    "navn": "Hovedinngang",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-02-19T07:13:00Z"
+  },
+  {
+    "id": "R-3009-002",
+    "byggId": "B-3009",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2025-08-25T07:35:00Z"
+  },
+  {
+    "id": "R-3009-003",
+    "byggId": "B-3009",
+    "navn": "Heis",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-08-29T08:55:00Z"
+  },
+  {
+    "id": "R-3009-004",
+    "byggId": "B-3009",
+    "navn": "Garasje",
+    "romnummer": "G1",
+    "etasje": -1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2024-05-27T09:53:00Z"
+  },
+  {
+    "id": "R-3009-005",
+    "byggId": "B-3009",
+    "navn": "Boder",
+    "romnummer": "K1",
+    "etasje": -1,
+    "type": "lager",
+    "aktiv": true,
+    "sistEndret": "2025-08-27T11:32:00Z"
+  },
+  {
+    "id": "R-3009-006",
+    "byggId": "B-3009",
+    "navn": "Gjesteleilighet",
+    "romnummer": "H0101",
+    "etasje": 1,
+    "type": "utleieenhet",
+    "aktiv": true,
+    "sistEndret": "2026-06-01T09:35:00Z"
+  },
+  {
+    "id": "R-3009-007",
+    "byggId": "B-3009",
+    "navn": "Strandsone og brygge",
+    "romnummer": null,
+    "etasje": null,
+    "type": "uteomrade",
+    "aktiv": true,
+    "sistEndret": "2025-10-08T11:46:00Z"
+  },
+  {
+    "id": "R-4001-001",
+    "byggId": "B-4001",
+    "navn": "Innkjøring",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-09-15T07:04:00Z"
+  },
+  {
+    "id": "R-4001-002",
+    "byggId": "B-4001",
+    "navn": "Plan 1",
+    "romnummer": "P1",
+    "etasje": 1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2026-02-19T08:26:00Z"
+  },
+  {
+    "id": "R-4001-003",
+    "byggId": "B-4001",
+    "navn": "Plan 2",
+    "romnummer": "P2",
+    "etasje": 2,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-02-10T07:43:00Z"
+  },
+  {
+    "id": "R-4001-004",
+    "byggId": "B-4001",
+    "navn": "Plan 3",
+    "romnummer": "P3",
+    "etasje": 3,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2025-10-22T07:57:00Z"
+  },
+  {
+    "id": "R-4001-005",
+    "byggId": "B-4001",
+    "navn": "Betalingsautomat ved utkjøring",
+    "romnummer": null,
+    "etasje": 1,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2024-04-23T13:40:00Z"
+  },
+  {
+    "id": "R-4001-006",
+    "byggId": "B-4001",
+    "navn": "Trapperom",
+    "romnummer": null,
+    "etasje": null,
+    "type": "trapperom",
+    "aktiv": true,
+    "sistEndret": "2025-09-18T12:09:00Z"
+  },
+  {
+    "id": "R-4001-007",
+    "byggId": "B-4001",
+    "navn": "Heis",
+    "romnummer": null,
+    "etasje": null,
+    "type": "fellesareal",
+    "aktiv": true,
+    "sistEndret": "2025-06-12T07:19:00Z"
+  },
+  {
+    "id": "R-4001-008",
+    "byggId": "B-4001",
+    "navn": "Elbillading plan 1",
+    "romnummer": "P1-EL",
+    "etasje": 1,
+    "type": "parkering",
+    "aktiv": true,
+    "sistEndret": "2026-09-21T13:20:00Z"
+  }
+]

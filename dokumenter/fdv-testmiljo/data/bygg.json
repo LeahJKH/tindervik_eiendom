@@ -1,0 +1,236 @@
+[
+  {
+    "id": "B-1001",
+    "navn": "Tindvik Kontorsenter",
+    "type": "kontor",
+    "adresse": {
+      "gateadresse": "Havnegata 12",
+      "postnummer": "4890",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1998,
+    "aktiv": true,
+    "sistEndret": "2025-12-11T10:44:00Z"
+  },
+  {
+    "id": "B-1002",
+    "navn": "Brygga Næringsbygg",
+    "type": "kontor",
+    "adresse": {
+      "gateadresse": "Bryggekaia 3",
+      "postnummer": "4890",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1912,
+    "aktiv": true,
+    "sistEndret": "2024-07-03T09:54:00Z"
+  },
+  {
+    "id": "B-1003",
+    "navn": "Fjordporten",
+    "type": "kontor",
+    "adresse": {
+      "gateadresse": "Storgata 45",
+      "postnummer": "4890",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2009,
+    "aktiv": true,
+    "sistEndret": "2026-01-21T12:27:00Z"
+  },
+  {
+    "id": "B-1004",
+    "navn": "Teknologiparken, bygg A",
+    "type": "kontor",
+    "adresse": {
+      "gateadresse": "Innovasjonsveien 1",
+      "postnummer": "4891",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2016,
+    "aktiv": true,
+    "sistEndret": "2025-09-03T07:10:00Z"
+  },
+  {
+    "id": "B-1005",
+    "navn": "Teknologiparken, bygg B",
+    "type": "kontor",
+    "adresse": {
+      "gateadresse": "Innovasjonsveien 3",
+      "postnummer": "4891",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2019,
+    "aktiv": true,
+    "sistEndret": "2026-09-17T11:05:00Z"
+  },
+  {
+    "id": "B-1006",
+    "navn": "Gamle Posthuset",
+    "type": "kontor",
+    "adresse": {
+      "gateadresse": "Postgata 1",
+      "postnummer": "4890",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1935,
+    "aktiv": false,
+    "sistEndret": "2026-06-30T10:00:00Z"
+  },
+  {
+    "id": "B-2001",
+    "navn": "Tindvik Storsenter",
+    "type": "handel",
+    "adresse": {
+      "gateadresse": "Senterveien 10",
+      "postnummer": "4892",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2004,
+    "aktiv": true,
+    "sistEndret": "2024-01-16T12:11:00Z"
+  },
+  {
+    "id": "B-3001",
+    "navn": "Solsiden, blokk A",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Solsidevegen 2",
+      "postnummer": "4893",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1987,
+    "aktiv": true,
+    "sistEndret": "2026-02-05T08:51:00Z"
+  },
+  {
+    "id": "B-3002",
+    "navn": "Solsiden, blokk B",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Solsidevegen 4",
+      "postnummer": "4893",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1987,
+    "aktiv": true,
+    "sistEndret": "2025-03-21T11:00:00Z"
+  },
+  {
+    "id": "B-3003",
+    "navn": "Solsiden, blokk C",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Solsidevegen 6",
+      "postnummer": "4893",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1988,
+    "aktiv": true,
+    "sistEndret": "2024-05-03T12:19:00Z"
+  },
+  {
+    "id": "B-3004",
+    "navn": "Lyngveien 8",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Lyngveien 8",
+      "postnummer": "4894",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1964,
+    "aktiv": true,
+    "sistEndret": "2025-11-10T06:32:00Z"
+  },
+  {
+    "id": "B-3005",
+    "navn": "Lyngveien 10",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Lyngveien 10",
+      "postnummer": "4894",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1964,
+    "aktiv": true,
+    "sistEndret": "2026-02-27T10:23:00Z"
+  },
+  {
+    "id": "B-3006",
+    "navn": "Kirkebakken 2",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Kirkebakken 2",
+      "postnummer": "4890",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1951,
+    "aktiv": true,
+    "sistEndret": "2025-05-28T13:32:00Z"
+  },
+  {
+    "id": "B-3007",
+    "navn": "Utsikten",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Utsiktsveien 21",
+      "postnummer": "4895",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2012,
+    "aktiv": true,
+    "sistEndret": "2024-10-21T11:02:00Z"
+  },
+  {
+    "id": "B-3008",
+    "navn": "Parkgården",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Parkveien 5",
+      "postnummer": "4890",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 1929,
+    "aktiv": true,
+    "sistEndret": "2025-09-15T06:07:00Z"
+  },
+  {
+    "id": "B-3009",
+    "navn": "Havblikk",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Strandpromenaden 14",
+      "postnummer": "4896",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2021,
+    "aktiv": true,
+    "sistEndret": "2025-01-06T13:31:00Z"
+  },
+  {
+    "id": "B-3010",
+    "navn": "Sjøhagen",
+    "type": "bolig",
+    "adresse": {
+      "gateadresse": "Sjøgata 7",
+      "postnummer": "4896",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2026,
+    "aktiv": true,
+    "sistEndret": "2026-09-15T12:30:00Z"
+  },
+  {
+    "id": "B-4001",
+    "navn": "Tindvik P-hus",
+    "type": "parkering",
+    "adresse": {
+      "gateadresse": "Jernbanegata 2",
+      "postnummer": "4890",
+      "poststed": "Tindvik"
+    },
+    "byggeaar": 2001,
+    "aktiv": true,
+    "sistEndret": "2025-05-28T10:46:00Z"
+  }
+]
