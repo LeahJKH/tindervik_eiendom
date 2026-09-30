@@ -1,0 +1,24 @@
+{
+  "name": "TindApi",
+  "version": "0.1.0",
+  "description": "Backend rest api for Tindvik Eiendom. containing problems with the buildings",
+  "homepage": "https://github.com/LeahJKH/tindervik_eiendom#readme",
+  "bugs": {
+    "url": "https://github.com/LeahJKH/tindervik_eiendom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeahJKH/tindervik_eiendom.git"
+  },
+  "license": "MIT",
+  "author": "Leah Yoimiya Johansen",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mssql": "^12.7.2"
+  }
+}
