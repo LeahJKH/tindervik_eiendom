@@ -1,0 +1,2 @@
+# planleggings fasen
+etter første dag med bruk av AI som sparringspartner føler jeg at jeg har komt med en god plan som leverer det den skal. siden jeg sliter med dyseleksi så er det greit og ha en ai som kan se over dokumentet mitt og gi beskjed av hva jeg har glemt, sett vekk fra eller skrivefeil. jeg brukte også ai til og sette opp chat historikken i en seperat fil for og gi litt  insyn i hva jeg spør etter
