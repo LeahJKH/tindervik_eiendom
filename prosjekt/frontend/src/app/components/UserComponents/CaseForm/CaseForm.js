@@ -18,12 +18,12 @@ export default function CaseForm() {
                 <textarea></textarea>
             </label>
 
-            <selection>
+            {/* <selection>
                 <option></option>
                 <option></option>
                 <option></option>
                 <option></option>
-            </selection>
+            </selection> */}
 
             <button>Send inn</button>
         </form>

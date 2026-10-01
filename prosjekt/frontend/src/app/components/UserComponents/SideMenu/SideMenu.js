@@ -1,12 +1,12 @@
-export default function SideMenu() {
+export default function SideMenu({chosenBuilding, chosenRoom}) {
     return (
         <>
         <aside>
             <section>
                 <p>Nåværende bygg:</p>
-                <p></p>
+                <p>{chosenBuilding}</p>
                 <p>Nåværende rom:</p>
-                <p></p>
+                <p>{chosenRoom}</p>
             </section>
             <hr></hr>
             <section>

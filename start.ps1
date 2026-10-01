@@ -2,6 +2,8 @@ $rootDir = (Get-Location).Path
 
 Write-Host "starting servers...." -ForegroundColor Magenta
 
+
+
 # moves us too the backend
 Write-Host "backend startup..."
 Set-Location -Path "$rootDir/prosjekt/backend"
@@ -37,12 +39,21 @@ Set-Location -Path "$rootDir/prosjekt/backend"
 # Write-Host ".env configuration complete!" -ForegroundColor Green
 
 # LASTE NED NPM PAKKER
-Write-Host "Checking node modules for backend..." -ForegroundColor Gray
-npm i --no-audit --no-fund > $null 2>&1
-
-Write-Host "Checking node modules for frontend..." -ForegroundColor Gray
-Set-Location -Path "$rootDir/prosjekt/frontend"
-npm i --no-audit --no-fund > $null 2>&1
+# function Install-NodePack {
+    Write-Host "Checking node modules for backend..." -ForegroundColor Gray
+    npm i --no-audit --no-fund > $null 2>&1
+    
+    Write-Host "Checking node modules for frontend..." -ForegroundColor Gray
+    Set-Location -Path "$rootDir/prosjekt/frontend"
+    npm i --no-audit --no-fund > $null 2>&1
+# }
+# do { #checks user input if not Y or N then ask again till
+#     $yorn = Read-Host "Would you like too download npm packages? Y/N"
+# } until ($yorn -eq "Y" -or $yorn -eq "N") {
+#     if ($yorn -eq "Y") {
+#             Install-NodePack
+#     }
+# }
 # LASTE NED NPM PAKKER
 
 
