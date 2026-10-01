@@ -47,9 +47,23 @@ async function generateAllCodes() {
 
 
     roomlistings.forEach((item) => {
-        fetch(`${apiUrl}`)
-        const url = `${FrontendUrl}?building=${item.byggId}&room=${item.id}`;
-        const fileName = `../qrcodes/${item.byggId}_${item.navn}.png`.replace(/\s/g, '_');
+        let byggData;
+        
+  
+            let res = await fetch(`${apiUrl}/api/v1/bygg/${item.byggId}`, {
+                    method: 'GET',
+                    headers: {
+                        'X-API-Key': 'tindvik-test-2026',
+                        'Content-Type': 'application/json' 
+                    } // sends in the api key !NOTE: move this too env leah
+                })
+            let data = await res.json() 
+            let finished = await data
+        
+        byggData = getBuildingData()
+        console.log(byggData)
+        const url = `${FrontendUrl}?building=${byggData.navn}&room=${item.navn}`;
+        const fileName = `../qrcodes/${byggData.navn}_${item.navn}.png`.replace(/\s/g, '_');
 
         try {
             QRCode.toFile(fileName, url, {
