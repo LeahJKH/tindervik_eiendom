@@ -11,6 +11,8 @@ import express from 'express'
 
 const router = express.Router()
 
+// rest of code
+
 export default router
 ```
-as then you don't send out the right routes
+as then you don't send out the right routes and it wont be able too mount
