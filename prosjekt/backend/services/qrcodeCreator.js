@@ -58,7 +58,7 @@ async function generateAllCodes() {
                     } // sends in the api key !NOTE: move this too env leah
                 })
             let data = await res.json() 
-            let finished = await data
+            let finished = await data // need too find a way too async display the data
         
         byggData = getBuildingData()
         console.log(byggData)
