@@ -8,35 +8,35 @@ Write-Host "starting servers...." -ForegroundColor Magenta
 Write-Host "backend startup..."
 Set-Location -Path "$rootDir/prosjekt/backend"
 
-# $envPath = ".env"
-# $requiredKeys = @("DB_USER", "DB_PASSWORD", "DB_NAME", "DB_PORT")
+$envPath = ".env"
+$requiredKeys = @("DB_USER", "DB_PASSWORD", "DB_NAME", "DB_PORT")
 
-# $existingKeys = @()
-# if (Test-Path $envPath) {
-#     $existingLines = Get-Content $envPath
-#     foreach ($line in $existingLines) {
-#         if ($line -match "^([^#=]+)=") {
-#             $existingKeys += $matches[1].Trim()
-#         }
-#     }
-# } else {
-#     Write-Host "`nNo .env file found. moving too env setup" -ForegroundColor Yellow
-#     New-Item -Path $envPath -ItemType File > $null
-# }
+$existingKeys = @()
+if (Test-Path $envPath) {
+    $existingLines = Get-Content $envPath
+    foreach ($line in $existingLines) {
+        if ($line -match "^([^#=]+)=") {
+            $existingKeys += $matches[1].Trim()
+        }
+    }
+} else {
+    Write-Host "`nNo .env file found. moving too env setup" -ForegroundColor Yellow
+    New-Item -Path $envPath -ItemType File > $null
+}
 
-# foreach ($key in $requiredKeys) {
-#     if ($existingKeys -notcontains $key) {
-#         $userInput = ""
+foreach ($key in $requiredKeys) {
+    if ($existingKeys -notcontains $key) {
+        $userInput = ""
         
-#         while ([string]::IsNullOrWhiteSpace($userInput)) {
-#             $promptMessage = "Please enter your $($key)"
-#             $userInput = Read-Host $promptMessage
-#         }
+        while ([string]::IsNullOrWhiteSpace($userInput)) {
+            $promptMessage = "Please enter your $($key)"
+            $userInput = Read-Host $promptMessage
+        }
         
-#         Add-Content -Path $envPath -Value "$key='$userInput'"
-#     }
-# }
-# Write-Host ".env configuration complete!" -ForegroundColor Green
+        Add-Content -Path $envPath -Value "$key='$userInput'"
+    }
+}
+Write-Host ".env configuration complete!" -ForegroundColor Green
 
 # LASTE NED NPM PAKKER
 # function Install-NodePack {
