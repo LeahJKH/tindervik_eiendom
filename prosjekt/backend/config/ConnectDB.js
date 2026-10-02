@@ -5,7 +5,6 @@ import 'dotenv/config'
 const dbUsername = process.env.DB_USER;
 const dbPassword = process.env.DB_PASSWORD;
 const dbName = process.env.DB_NAME
-const dbPort = Number(process.env.DB_PORT)
 const dbServer = 'localhost' // we use local host here as it will automatically get the ip of the user so that we dont have too insert our own ip each time we switch computers
 // DATABASE LOGIN INFO
 
@@ -15,10 +14,10 @@ const config = {
     user: dbUsername,
     password: dbPassword,
     server: dbServer,
-    port: dbPort, 
     database: dbName,
     options: {
-        trustServerCertificate: true 
+        trustServerCertificate: true, 
+        instanceName: 'TINDERVIK'
     },
 };
 // config files for microsoft sql database
