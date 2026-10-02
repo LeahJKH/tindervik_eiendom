@@ -1,22 +1,20 @@
 import QRCode from 'qrcode';
 import fs from 'fs';
 
-//CHANGE BASED ON YOURS
 const FrontendUrl = "http://localhost:3000/Report"
 const apiUrl = "http://localhost:3200"
-// CHANGE BASED ON YOURS
 
 async function getRoomFromFDV() {
     let allRooms = [];
     let side = "/api/v1/rom"
     try {
-        while (side) { // runs as long as we have a page
+        while (side) { 
             const response = await fetch(`${apiUrl}${side}`, {
                 method: 'GET',
                 headers: {
                     'X-API-Key': 'tindvik-test-2026',
                     'Content-Type': 'application/json' 
-                } // sends in the api key !NOTE: move this too env leah
+                } 
             });
 
             if (!response.ok) {
@@ -26,7 +24,7 @@ async function getRoomFromFDV() {
             const data = await response.json();
             const roomOnSite = data.data; 
 
-            allRooms = allRooms.concat(roomOnSite); // puts all rooms in one 
+            allRooms = allRooms.concat(roomOnSite); 
 
             side = data.paginering.neste;
         }
@@ -38,45 +36,44 @@ async function getRoomFromFDV() {
 }
 
 if (!fs.existsSync('../qrcodes')) {
-    fs.mkdirSync('../qrcodes'); // creates a qr code folder if u dont have one just a double check
+    fs.mkdirSync('../qrcodes'); 
+}
+
+async function getBuildingData(byggId) {
+    let res = await fetch(`${apiUrl}/api/v1/bygg/${byggId}`, {
+        method: 'GET',
+        headers: {
+            'X-API-Key': 'tindvik-test-2026',
+            'Content-Type': 'application/json' 
+        } 
+    })
+    let data = await res.json() 
+    let finished = await data 
+    return finished
 }
 
 async function generateAllCodes() {
     console.log("Starting creating qr codes");
     let roomlistings = await getRoomFromFDV()
 
-
-    roomlistings.forEach((item) => {
-        let byggData;
-        
-  
-            let res = await fetch(`${apiUrl}/api/v1/bygg/${item.byggId}`, {
-                    method: 'GET',
-                    headers: {
-                        'X-API-Key': 'tindvik-test-2026',
-                        'Content-Type': 'application/json' 
-                    } // sends in the api key !NOTE: move this too env leah
-                })
-            let data = await res.json() 
-            let finished = await data // need too find a way too async display the data
-        
-        byggData = getBuildingData()
+    for (const item of roomlistings) {
+        let byggData = await getBuildingData(item.byggId)
         console.log(byggData)
+
         const url = `${FrontendUrl}?building=${byggData.navn}&room=${item.navn}`;
         const fileName = `../qrcodes/${byggData.navn}_${item.navn}.png`.replace(/\s/g, '_');
 
         try {
-            QRCode.toFile(fileName, url, {
+            await QRCode.toFile(fileName, url, {
                 width: 600,  
                 margin: 6    
             });
         } catch (err) {
-            console.error(`Was not able too save \nbuilding: ${item.bygg}\nroom:${item.rom}:`, err);
+            console.error(`Was not able too save \nbuilding: ${byggData.navn}\nroom:${item.navn}:`, err);
         }
-    })
+    }
     
+    console.log("Done You can close this window now!");
 }
 
 generateAllCodes();
-
-console.log("Done You can close this window now!");
