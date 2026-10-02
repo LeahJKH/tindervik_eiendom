@@ -32,6 +32,7 @@ async function getRoomFromFDV() {
         return allRooms;
     } catch (err) {
         console.error("could not process", err);
+        return []
     }
 }
 
@@ -56,11 +57,11 @@ async function generateAllCodes() {
     console.log("Starting creating qr codes");
     let roomlistings = await getRoomFromFDV()
 
+
     for (const item of roomlistings) {
         let byggData = await getBuildingData(item.byggId)
-        console.log(byggData)
 
-        const url = `${FrontendUrl}?building=${byggData.navn}&room=${item.navn}`;
+        const url = `${FrontendUrl}?building=${byggData.navn}&room=${item.navn}&BD=${item.byggId}&RD=${item.id}`; // her kaller jeg idene BD og RD så man ikke automatisk tenker dette er noe viktig men jeg er nødt til og sende id'ene til frontenden ikke bare for og spare tid men også for og lett indexsere i frontenden for og gi lettere brukeropplevelse
         const fileName = `../qrcodes/${byggData.navn}_${item.navn}.png`.replace(/\s/g, '_');
 
         try {

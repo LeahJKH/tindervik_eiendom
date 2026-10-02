@@ -9,7 +9,7 @@ Write-Host "backend startup..."
 Set-Location -Path "$rootDir/prosjekt/backend"
 
 $envPath = ".env"
-$requiredKeys = @("DB_USER", "DB_PASSWORD", "DB_NAME", "DB_PORT")
+$requiredKeys = @("DB_USER", "DB_PASSWORD", "DB_NAME")
 
 $existingKeys = @()
 if (Test-Path $envPath) {
