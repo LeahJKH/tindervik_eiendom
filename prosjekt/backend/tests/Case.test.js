@@ -14,7 +14,7 @@ const mssqlMock = {
 };
 
 // we have too fake the DB connection 
-jest.unstable_mockModule('../config/ConnectDB.js', () => ({
+jest.unstable_mockModule('../config/ConnectDB.js', () => ({ // using Unstable because ES modules will crash while our code is in Modern js
     default: Promise.resolve({
         request: jest.fn(() => mssqlMock) // pretends we get connected so we can test without DB
     })
