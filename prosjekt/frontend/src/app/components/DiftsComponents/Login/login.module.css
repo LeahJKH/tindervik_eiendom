@@ -1,0 +1,40 @@
+.LoginCont {
+background-color: var(--sub-col);
+width: 70%;
+min-height: 200px;
+height: fit-content;
+padding: 25px 55px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+box-shadow: -1px 1px 10px var(--shadow);
+border-radius: 20px;
+}
+.labelCont {
+color: var(--Text);
+width: 90%;
+}
+.inputLabel {
+display: flex;
+gap: 20px;
+justify-content: space-between;
+font-size: 25px;
+}
+.Input {
+width: 80%;
+}
+.loginBtn {
+width: 50%;
+height: 50px;
+margin: auto;
+font-size: 30px;
+background-color: var(--foreground);
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+.loginBtn:hover {
+    background-color: rgb(100, 169, 115);
+}

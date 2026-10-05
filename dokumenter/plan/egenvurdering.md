@@ -4,3 +4,6 @@ etter første dag med bruk av AI som sparringspartner føler jeg at jeg har komt
 # start fase programmering
 
 alt av boilerplaten er satt opp og fikk lagd opp ende punkter. jeg føler jeg mangler et endepunkt men jeg kan ikke klø meg i hode for og finne ut av dette. dermed går jeg videre. jeg tar da og setter opp en statisk frontend så jeg kan gjøre meg klar til tilkobling imorgen. men jeg sliter med og beggyne på backend code uten en database og noe vissuelt og teste det på. jeg er litt bak skjema men ikke med mye
+
+## changelogg
+føler selv det er litt vansklig og vite når jeg skal når jeg ikke skal men dette er trening dette vik komme på plass
