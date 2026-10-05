@@ -1,5 +1,5 @@
 import Form from "next/dist/client/app-dir/form";
-
+import style from './caseform.module.css'
 export default function CaseForm() {
     return (
         <>
