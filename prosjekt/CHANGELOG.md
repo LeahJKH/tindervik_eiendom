@@ -3,6 +3,12 @@
 here all changes will be listed when they come
 
 ---
+## [1.1.1]
+### modified
+- styling login
+- styling report
+- api logic report 
+
 ## [1.0.1]
 
 ### modified
