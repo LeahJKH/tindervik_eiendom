@@ -7,3 +7,10 @@ alt av boilerplaten er satt opp og fikk lagd opp ende punkter. jeg føler jeg ma
 
 ## changelogg
 føler selv det er litt vansklig og vite når jeg skal når jeg ikke skal men dette er trening dette vik komme på plass
+
+## tid 
+denne runden hadde jeg mer tid på meg men jeg har ikke brukt den så effektivt som jeg skulle ønsket. så no blir det og jobbe hardt den siste dagen og håpe det går på skinner. dag 5 var langt i fra godt nok bruk av tiden min
+
+## tvist
+jeg vet jeg ikke vil få tid til tvisten så den ser jeg bort fra. men med løsningen som er no kan man identifisere bruker nøkkler og det vil ikke være for vansklig og lage en url som auto redirecter med nøkkel kan være jeg setter dette opp om det blir tid
+

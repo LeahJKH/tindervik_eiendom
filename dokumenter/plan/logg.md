@@ -9,3 +9,7 @@ denne dagen var stressende dersom og lage qr coder tok hardt på knekken på meg
 # DAG 4 
 backend kjører med en jest test. måtte lære meg jest som var ganske spennende men tenker no at vi har en ganske grei start på hvor vi vil være no bare til og koble til frontenden og designe. 
 
+# DAG 5 
+lagde sstyling og logikk for mobil visning jeg ville få det unna gjort dersom jeg vet dette ville ta tid. resten no skal ikke ta for lang tid dersom det er veldig lite styling i form element men jeg må nok endre en ny løsning for bilder. jeg måtte desverre ta timene selv dersom jeg ikke fant en løsning for dette i dag
+
+faktisk jobb tid 12:00 - 16:30
