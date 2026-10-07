@@ -23,8 +23,9 @@ export default function SideMenu({chosenBuilding, chosenRoom, rD, bD}) {
         };
     }, []);
 
+    useEffect(() => {
 
-    async function getData() {
+        async function getData() {
             const response = await fetch(`http://localhost:3200/api/v1/bygg/${bD}/rom`, {
                 method: 'GET',
                 headers: {
@@ -32,10 +33,14 @@ export default function SideMenu({chosenBuilding, chosenRoom, rD, bD}) {
                     'Content-Type': 'application/json' 
                 } 
             });
-            let data = await response.json()
-            console.log(response)
-    }
-    getData()
+            if (!response.ok) {
+                console.log(`${response.status}`)
+            }
+            let data = await response.json();
+            console.log(data)
+        }
+        getData()
+    }, [bD])
     return (
         <>
         <aside className={style.aside}>

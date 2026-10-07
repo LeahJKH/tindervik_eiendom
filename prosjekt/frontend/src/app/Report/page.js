@@ -10,10 +10,12 @@ export default function Report() {
 
     const chosenBuilding = params.get("building")   
     const chosenRoom = params.get("room")
+    const rD = params.get("rD")
+    const bD = params.get("bD")
     
     return (
         <>
-        <SideMenu chosenBuilding={chosenBuilding} chosenRoom={chosenRoom}></SideMenu>
+        <SideMenu chosenBuilding={chosenBuilding} chosenRoom={chosenRoom} rD={rD} bD={bD}></SideMenu>
         <CaseForm></CaseForm>
         </>
     )
