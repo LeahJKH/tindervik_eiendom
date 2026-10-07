@@ -1,0 +1,55 @@
+.fullForm {
+    background-color: var(--sub-col);
+    width: 98%;
+    text-align: center;
+    color: var(--Text);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+}
+.label:nth-child(4) {
+   align-items: flex-start;
+}
+.input {
+width: 200px;
+}
+.textarea {
+width: 200px;
+height: 150px;
+}
+.select {
+width: 200px;
+height: 35px;
+font-size: 25px;
+}
+.knapp {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid var(--sub-col-two);
+    background-color: var(--sub-col-two);
+color:var(--Text-opisite);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.knapp:hover {
+background-color: transparent;
+color:var(--Text);
+}
+.container {
+background-color: var(--background);
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}

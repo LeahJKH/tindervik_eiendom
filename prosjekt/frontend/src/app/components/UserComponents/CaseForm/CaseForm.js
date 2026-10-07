@@ -1,32 +1,42 @@
 import Form from "next/dist/client/app-dir/form";
 import style from './caseform.module.css'
 export default function CaseForm() {
+
     return (
         <>
-        <form>
-            <label>
-            <input type="text" placeholder="John" />
+        <div className={style.container}>
+
+        <form className={style.fullForm}>
+            <label className={style.label}>
+                Fult navn
+            <input type="text" placeholder="John wick" className={style.input}/>
             </label>
-            <label>
-            <input type="email" placeholder="John" />
+            <label className={style.label}>
+                Email
+            <input type="email" placeholder="John.wick@gmail.com" className={style.input}/>
             </label>
-            <label>
-            <input type="tel" placeholder="John" />
+            <label className={style.label}>
+                telefon:
+            <input type="tel" placeholder="+4784321922" className={style.input}/>
             </label>
 
-            <label>
-                <textarea></textarea>
+            <label className={style.label}>
+                forklar problemet*:
+                <textarea required placeholder="vasken lekker..." className={style.textarea}></textarea>
             </label>
 
-            {/* <selection>
-                <option></option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </selection> */}
+                <label className={style.label}>
+                    prioritet?:
+                    <select className={style.select}>
+                        <option value="lav">Lav</option>
+                        <option value="middels">middels</option>
+                        <option value="kritisk">kritisk</option>
+                    </select>
+                </label>
 
-            <button>Send inn</button>
+            <button className={style.knapp}>Send inn</button>
         </form>
+        </div>
         </>
     )
 }
