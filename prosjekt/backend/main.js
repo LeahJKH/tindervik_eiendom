@@ -5,6 +5,7 @@ import cors from 'cors'
 //ROUTE IMPORTS
 import Cases from './routes/GET/cases.js'
 import Case from './routes/POST/Case.js'
+import Key from './routes/POST/key.js'
 
 
 // starting api under 5000 
@@ -15,9 +16,9 @@ const port = 5000
 let allRoutes;
 // routes
 try {
-     allRoutes = [Case, Cases]
+     allRoutes = [Key, Case, Cases]
 } catch {
-console.log("halla")
+console.log("error: couldnt get routes")
 }
 //
 
