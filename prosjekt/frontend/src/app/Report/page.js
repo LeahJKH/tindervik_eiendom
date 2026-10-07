@@ -16,7 +16,7 @@ export default function Report() {
     return (
         <>
         <SideMenu chosenBuilding={chosenBuilding} chosenRoom={chosenRoom} rD={rD} bD={bD}></SideMenu>
-        <CaseForm></CaseForm>
+        <CaseForm chosenBuilding={chosenBuilding} chosenRoom={chosenRoom} rD={rD} bD={bD}></CaseForm>
         </>
     )
 }

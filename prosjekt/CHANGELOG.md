@@ -3,6 +3,18 @@
 here all changes will be listed when they come
 
 ---
+## [2.0.0]
+
+### added
+- design for rest of pages
+- connection too database
+- key logic
+
+### modified
+- pictures
+- case backend logic 
+- Form too take inn more info
+
 ## [1.1.1]
 ### modified
 - styling login

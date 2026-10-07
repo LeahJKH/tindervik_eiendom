@@ -23,10 +23,13 @@
     "dotenv": "^18.0.5",
     "express": "^5.2.1",
     "mssql": "^12.7.2",
+    "multer": "^2.4.0",
     "qrcode": "^1.5.4"
   },
   "allowScripts": {
-    "argon2@0.45.1": true
+    "argon2@0.45.1": true,
+    "@parcel/watcher@2.6.0": true,
+    "unrs-resolver@1.12.2": true
   },
   "devDependencies": {
     "jest": "^30.5.2",

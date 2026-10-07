@@ -1,10 +1,16 @@
 import sqlPromise from '../../config/ConnectDB.js'
 import express from 'express'
 import sql from 'mssql'
+import multer from 'multer'
 
 const router = express.Router()
 
-router.post('/createCase', async (req, res) => {
+// lagrer bilde i RAM med bruk av multer
+const upload = multer({ storage: multer.memoryStorage() })
+
+// for og få tak i bilde må vi bruke upload.single metoden så den kan hente på riktig måte ettersom den blir sendt som formData
+router.post('/createCase', upload.single('bilde'), async (req, res) => {
+
     const {
         buildingID,
         roomID,
@@ -12,11 +18,13 @@ router.post('/createCase', async (req, res) => {
         seriousness = 'Lav', 
         namePerson = 'anonym',
         email = 'N/A',
-        number = 'N/A',
-        pictureUrl
+        number = 'N/A'
     } = req.body;
-
+    // bilde våres vil ikke være i req.body men heller file
+    const bildeBuffer = req.file ? req.file.buffer : null;
+    
     try {
+
         const dbConnect = await sqlPromise;
 
         const caseResult = await dbConnect.request()
@@ -51,23 +59,23 @@ router.post('/createCase', async (req, res) => {
             .input("namePerson", sql.VarChar(80), namePerson)
             .input("email", sql.VarChar(100), email)
             .input("number", sql.VarChar(100), number)
-            .input("pictureUrl", sql.VarChar(255), pictureUrl || null)
+            .input("picture", sql.VarBinary(sql.MAX), bildeBuffer)
             .query(`
                 INSERT INTO T_Tindvik_PersonInfo (
                     caseID, 
                     namePerson, 
                     email, 
                     number, 
-                    pictureUrl
+                    picture
                 )
                 VALUES (
                     @caseID, 
                     @namePerson, 
                     @email, 
                     @number, 
-                    @pictureUrl
+                    @picture
                 )
-            `); // sql, sql, sql
+            `); 
 
         res.status(201).json({
             caseID: caseID,
@@ -75,10 +83,10 @@ router.post('/createCase', async (req, res) => {
             roomID: roomID,
             createdAt: newCase.CreatedDate,
             message: "Case was made!"
-        });  // sends message back incase succesfull
+        });  
 
     } catch (err) {
-        console.error(err); // will make error customized
+        console.error(err); 
         res.status(500).json({
             message: 'Couldnt Create'
         });
