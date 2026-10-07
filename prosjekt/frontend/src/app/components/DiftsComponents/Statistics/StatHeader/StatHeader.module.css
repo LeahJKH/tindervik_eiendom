@@ -1,0 +1,33 @@
+.Header {
+width: 80%;
+display: flex;
+height: 40%;
+background-color: var(--sub-col-two);
+color: var(--Text-opisite);
+padding: 20px 30px;
+box-shadow: 1px 1px 1px var(--shadow);
+justify-content: space-between;
+}
+.GraphMenu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60%;
+}
+.GraphCont {
+display: flex;
+flex-direction: column;
+}
+.moreBtn {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid var(--sub-col);
+    background-color: var(--sub-col);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.moreBtn:hover {
+background-color: transparent;
+color:var(--Text-opisite);
+}

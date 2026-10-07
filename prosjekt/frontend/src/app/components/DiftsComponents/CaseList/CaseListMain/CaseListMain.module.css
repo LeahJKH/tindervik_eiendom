@@ -1,0 +1,35 @@
+.Main {
+width: 85%;
+background-color: var(--sub-col-two);
+color: var(--Text-opisite);
+padding: 2%;
+border-radius: 8px;
+box-shadow: 0 0 2px var(--shadow);
+}
+.CaseOptionsCont {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.SelectCase {
+
+}
+.CaseVeiw {
+width: 100%;
+height: 70vh;
+margin: 25px auto;
+overflow-y: scroll;
+}
+.Fler {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid var(--sub-col);
+    background-color: var(--sub-col);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Fler:hover {
+background-color: transparent;
+color:var(--Text-opisite);
+}

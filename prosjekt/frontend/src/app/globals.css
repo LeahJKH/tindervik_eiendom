@@ -2,8 +2,10 @@
   --background: #cfd0cf;
   --foreground: #6bb069;
   --Text: #131313;
+  --Text-opisite: #dbdbdb;
   --sub-col:  #f3f2f2;
   --shadow: #141414;
+  --sub-col-two: #373737;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +15,8 @@
     --Text: #3a3a3a;
     --sub-col: #cfd0cf;
     --shadow: #cbcbcb;
+    --sub-col-two: #373737;
+
   }
 }
 
